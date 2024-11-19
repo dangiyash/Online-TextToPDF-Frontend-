@@ -11,3 +11,120 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+body {
+  background: url('https://public-images.interaction-design.org/tags/td-glassmorphism-gradient-01.jpg') no-repeat center center fixed;
+            background-size: cover;
+  display: flex;          /* Use Flexbox for centering */
+  justify-content: center; /* Center horizontally */
+  align-items: center;    /* Center vertically */
+  height: 100vh;          /* Set the height to the full viewport */
+  margin: 0;              /* Remove default body margin */
+}
+
+.btn {
+  margin-top: 10px;
+  background: rgba(0, 0, 0, 0.3); /* Transparent background */
+  color: white;                    /* Text color */
+  border: 1px solid rgba(255, 255, 255, 0.167); /* Semi-transparent border */
+  padding: 15px 30px;              /* Padding for the button */
+  border-radius: 10px;             /* Rounded corners */
+  font-size: 18px;                 /* Font size */
+  cursor: pointer;                /* Pointer cursor */
+  text-align: center;
+  backdrop-filter: blur(10px);     /* Frosted glass effect */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+  transition: background 0.3s ease, color 0.3s ease;
+  padding-left: 200px;
+  padding-right: 200px;
+}
+
+.btn:hover {
+  background: rgba(0, 0, 0, 0); /* Slightly darker background on hover */
+  color: rgba(0, 0, 0, 0.9); /* Lighter text color on hover */
+  border: 2px solid rgb(0, 0, 0);
+  
+}
+
+.btn:active {
+  background: rgba(0, 0, 0, 0.7); /* Even darker on click */
+}
+.dv{
+  padding: 30px;
+  width: 100%;
+  max-width: 800px;
+  
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading */
+h1 {
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+/* Form styling */
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Title input (underlined without box) */
+label {
+  font-size: 1.1em;
+  margin-bottom: 5px;
+}
+
+input[type="text"] {
+  border: none;
+  border-bottom: 2px solid #0e0000; /* Only bottom border for underline effect */
+  padding: 10px;
+  margin-bottom: 20px;
+  font-size: 1.2em;
+  outline: none;
+  background: transparent;
+  transition: border-color 0.3s ease;
+  
+}
+
+/* Input focus style */
+input[type="text"]:focus {
+  border-color: #000300; /* Green border on focus */
+}
+
+/* Content textarea (underlined without box) */
+textarea {
+  margin-top: 10px;
+  border: none;
+  border-bottom: 2px solid #000000; /* Only bottom border for underline effect */
+  padding: 10px;
+  margin-bottom: 20px;
+  font-size: 1.2em;
+  outline: none;
+  background: transparent;
+  transition: border-color 0.3s ease;
+  resize: none; /* Disable resizing */
+  max-height: 300px;
+}
+
+/* Textarea focus style */
+textarea:focus {
+  border-color: #4CAF50; /* Green border on focus */
+}
+
+/* Shrinking text effect */
+input[type="text"], textarea {
+  font-size: 2em;
+  line-height: 1.4;
+  transition: font-size 0.3s ease;
+}
+
+/* Make text smaller when more text is entered, but with a minimum font size */
+input[type="text"]:focus, textarea:focus {
+  font-size: 1.6em;
+}
+
+input[type="text"]:not(:focus), textarea:not(:focus) {
+  font-size: 2em;
+}

@@ -36,3 +36,18 @@
     transform: rotate(360deg);
   }
 }
+body {
+  display: flex;          /* Use Flexbox for centering */
+  justify-content: center; /* Center horizontally */
+  align-items: center;    /* Center vertically */
+  height: 100vh;          /* Set the height to the full viewport */
+  margin: 0;              /* Remove default body margin */
+}
+
+div {
+  /* Optional: Style the divs */
+  width: 100px;
+  height: 100px;
+  background-color: lightblue;
+  border: 1px solid black;
+}
